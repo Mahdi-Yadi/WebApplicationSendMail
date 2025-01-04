@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    
+    @ViewBag.result 
+
+    <form method="post" asp-controller="Home" asp-action="SendEmail">
+        
+        <input type="text" name="email" placeholder="email" />
+        
+        <input type="text" name="subject" placeholder="subject" />
+
+        <input type="text" name="text" placeholder="text" />
+        
+        <button type="submit">ارسال</button>
+
+    </form>
+    
+
+</div>
